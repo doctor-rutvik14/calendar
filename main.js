@@ -1,0 +1,11 @@
+const language = navigator.language;
+let date = new Date();
+let dayNum = date.getDate();
+let month = date.getMonth();
+let dayN= date.toLocaleString(language, {weekday:'long'});
+let monthN = date.toLocaleString(language, {month:'long'});
+let year = date.getFullYear();
+document.getElementById('monthN').innerHTML = monthN;
+document.getElementById('dayN').innerHTML = dayN;
+document.getElementById('dayNum').innerHTML = dayNum;
+document.getElementById('year').innerHTML = year;
